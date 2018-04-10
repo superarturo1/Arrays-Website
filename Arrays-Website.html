@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>*** PUT YOUR NAME AND ASSIGNMENT NUMBER HERE ***</title>
+</head>
+
+
+
+
+<body>
+	<script type="text/javascript">
+		// Student's Name: 
+		// Date:
+		// Assignment number:
+		// Brief description:
+	
+		/********* GLOBAL VARIABLES *********/
+		// Enter any global variable in this region
+		var BR = '<br/>';
+		/********* FUNCTIONS *********/
+		// Enter any functions in this region
+	
+
+
+		/********* MAIN *********/
+		function main()
+		{
+		
+		var t =[[9,2,3],[4,5,6]]; //array t has two rows and three columns and six elements.  
+		
+		document.write("Names of all the elements in row 1 of Array t: " + t[0][0] + ', ' + t[0][1] + ', ' + t[0][2] + ".");
+		document.write('<br/>');
+		document.write("Names of all the elements in the third column of Array t: " + t[0][2] + ', ' + t[1][2] + ".");
+		document.write('<br/>');
+		t[0][1] = 0;
+		document.write("Name of the element in row one and column two of Array t: " + t[0][1] + ".");
+		document.write('<br/>');
+
+		
+		t.sort(minT);
+		function minT( value1, value2 ){
+		 return parseInt( value1 ) - parseInt( value2 ); 
+ 		}
+
+		document.writeln("The smallest value of array t: " + t[ 0 ][ 0 ] + ".");
+		document.write('<br/>');
+	
+		
+		
+		
+
+		document.write("Array t in tabular format: ");
+		document.write('<br/>');
+		
+		for ( var i in t )
+
+		{
+
+		for ( var j in t[ i ] )
+
+		document.write( t[ i ][ j ] + " " );
+
+		document.write( "<br />" );
+		document.write('<br/>');
+		
+		//printout total number
+		
+		function totalT(){
+		var total=0;
+		for (var i=0;i<t.length; i++){
+			for (var j=0; j<t[i].length; j++){
+			total+=t[i][j];
+		}
+		return total;
+		}
+		
+}
+
+
+document.write("Total number is " + totalT() + BR); //print out total number
+
+
+
+}
+
+
+
+  
+ 
+			}
+
+
+			
+					
+		// This line calls main, don't change it:
+		main();
+	</script>
+</body>
+</html>
